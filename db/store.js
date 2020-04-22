@@ -66,7 +66,7 @@ remoteNote(id) {
     .then(notes => notes.filter(note => note.id !== id))
     .then(filteredNote => this.write(filteredNotes));
     
-    
+                   
 }
 
 }
