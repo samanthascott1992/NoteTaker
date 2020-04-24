@@ -1,4 +1,4 @@
-  const express = require ("express");
+const express = require ("express");
 const apiroutes = require("./routes/apiroutes");
 const htmlroutes = require("./routes/htmlroutes");
 const app = express();
@@ -10,4 +10,6 @@ app.use(express.static("public"));
 app.use("/api", apiroutes);
 app.use("/", htmlroutes);
 
-app.listen(PORT, ()=> console.log (PORT));
+app.listen(PORT, ()=> {
+    console.log (PORT)
+});
